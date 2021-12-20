@@ -28,9 +28,9 @@ For this following commands need to be executed:
 
 ```
 
-gcc -fPIC -shared -o dip.so dip.c
+1.  gcc -fPIC -shared -o dip.so dip.c
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./dip.so
+2.  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./dip.so
 
 ```
 
