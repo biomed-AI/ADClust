@@ -49,7 +49,7 @@ python ADClust.py --name Baron_human_normalized
 
 ## output
 
-The clustering cell labels will be stored in the dir [output](https://github.com/biomed-AI/ADClust/) output/dataname_pred.csv. 
+The clustering cell labels will be stored in the dir `output`/dataname_pred.csv. 
 
 
 
@@ -57,7 +57,7 @@ The clustering cell labels will be stored in the dir [output](https://github.com
 
 All datasets can be downloaded at [Here](https://www.synapse.org/#!Synapse:syn26524750/files/)
 
-All datasets will be downloaded to: [data](https://github.com/biomed-AI/ADClust/data/) 
+All datasets will be downloaded to: [data](https://github.com/biomed-AI/ADClust/tree/main/data) 
 
 
 

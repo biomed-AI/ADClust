@@ -101,7 +101,8 @@ def load_c_dip_file():
     else:
         raise Exception("C compiled dip file can not be found.\n"
                         "On Linux execute: gcc -fPIC -shared -o dip.so dip.c\n"
-                        "Or add the path of dip.so into your LD_LIBRARY_PATH correctly\n")
+                        "Or Please ensure the dip.so was added in your LD_LIBRARY_PATH correctly by executing \n"
+                        "(export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./dip.so)  in the current directory of the ADClust folder. \n")
 
 
 def _merge_by_dip_value(X, embedded_data, cluster_labels_cpu, dip_argmax, n_clusters_current, centers_cpu, embedded_centers_cpu):
