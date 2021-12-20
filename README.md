@@ -13,6 +13,9 @@ Clustering analysis is widely utilized in single-cell RNA-sequencing (scRNA-seq)
 
 ## Requirements
 Please ensure that all the libraries below are successfully installed:
+
+- Ubuntu 16.04.7 LTS
+- GCC 5.4.0
 - **torch 1.7.1**
 - python 3.7.9
 - numpy 1.19.2
