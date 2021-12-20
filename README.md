@@ -17,6 +17,7 @@ Please ensure that all the libraries below are successfully installed:
 - numpy 1.19.2
 - scipy 1.7.3
 - scanpy 1.8.1
+- louvain 0.7.0
 
 
 
