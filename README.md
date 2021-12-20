@@ -43,7 +43,7 @@ For this following commands need to be executed:
 
 ```
 
-python ADClust.py --name Baron_human_normalized
+python ADClust.py --name Baron_Human_normalized
 
 ```
 
