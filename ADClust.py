@@ -291,8 +291,14 @@ def get_trained_autoencoder(trainloader, learning_rate, n_epochs, device, optimi
             input_dim)
         embedding_size = input_dim
 
+    if judge_system():
+        act_fn = torch.nn.ReLU
+    else:
+        act_fn = torch.nn.LeakyReLU
+
     # Pretrain Autoencoder
-    autoencoder = autoencoder_class(input_dim=input_dim, embedding_size=embedding_size).to(device)
+    autoencoder = autoencoder_class(input_dim=input_dim, embedding_size=embedding_size,
+                                    act_fn=act_fn).to(device)
 
     optimizer = optimizer_class(autoencoder.parameters(), lr=learning_rate)
     autoencoder.start_training(trainloader, n_epochs, device, optimizer, loss_fn)

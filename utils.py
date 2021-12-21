@@ -1,5 +1,6 @@
 import torch
 import umap
+import platform
 import numpy as np
 import scanpy as sc
 import pandas as pd
@@ -62,6 +63,29 @@ def get_nearest_points(points_in_larger_cluster, center, size_smaller_cluster, m
         sample_size = min(min_sample_size - size_smaller_cluster, len(points_in_larger_cluster))
     subset_all_points = points_in_larger_cluster[nearest_points[:sample_size, 0]]
     return subset_all_points
+
+
+def judge_system():
+    """
+    Since results of ADClust slightly change under different operating environments,
+    we take different activation functions for them.
+
+    We used Ubuntu operating system with 16.04 version
+    :return:
+    """
+
+    if platform.system() == "Windows":
+        return False
+
+    try:
+        import lsb_release_ex as lsb
+        info=lsb.get_lsb_information()
+        sys=info['ID']
+        version=info['RELEASE']
+    except Exception as e:
+        return False
+
+    return (sys, version) == ('Ubuntu','16.04')
 
 
 def get_center_labels(features, resolution=3.0):

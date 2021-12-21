@@ -17,16 +17,13 @@ Please ensure that all the libraries below are successfully installed:
 - Ubuntu 16.04.7 LTS
 - GCC 5.4.0
 - **torch 1.7.1**
-- python 3.7.9
-- numpy 1.19.2
-- scipy 1.7.3
 - scanpy 1.8.1
 - louvain 0.7.0
-- igraph 0.9.6
+- lsb_release_ex
 
 
 Note: All results have been obtained under Ubuntu 16.04.7 LTS. We have also noticed that the 
-results slightly changes under different operating environments. 
+results slightly change under different operating environments. 
 
 
 ## Installation

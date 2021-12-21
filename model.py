@@ -2,25 +2,25 @@ import torch
 
 class _ADClust_Autoencoder(torch.nn.Module):
 
-    def __init__(self, input_dim: int, embedding_size: int):
+    def __init__(self, input_dim: int, embedding_size: int, act_fn=torch.nn.LeakyReLU):
         super(_ADClust_Autoencoder, self).__init__()
 
         self.encoder = torch.nn.Sequential(
             torch.nn.Linear(input_dim, 512),
-            torch.nn.ReLU(inplace=True),
+            act_fn(inplace=True),
             torch.nn.Linear(512, 256),
-            torch.nn.ReLU(inplace=True),
+            act_fn(inplace=True),
             torch.nn.Linear(256, 128),
-            torch.nn.ReLU(inplace=True),
+            act_fn(inplace=True),
             torch.nn.Linear(128, embedding_size))
 
         self.decoder = torch.nn.Sequential(
             torch.nn.Linear(embedding_size, 128),
-            torch.nn.ReLU(inplace=True),
+            act_fn(inplace=True),
             torch.nn.Linear(128, 256),
-            torch.nn.ReLU(inplace=True),
+            act_fn(inplace=True),
             torch.nn.Linear(256, 512),
-            torch.nn.ReLU(inplace=True),
+            act_fn(inplace=True),
             torch.nn.Linear(512, input_dim),
         )
 
