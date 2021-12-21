@@ -17,6 +17,7 @@ Please ensure that all the libraries below are successfully installed:
 - Ubuntu 16.04.7 LTS
 - GCC 5.4.0
 - **torch 1.7.1**
+- CUDA Version 10.2.89
 - scanpy 1.8.1
 - louvain 0.7.0
 - lsb_release_ex
