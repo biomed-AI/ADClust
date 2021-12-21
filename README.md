@@ -25,6 +25,9 @@ Please ensure that all the libraries below are successfully installed:
 - igraph 0.9.6
 
 
+Note: All results have been obtained under Ubuntu 16.04.7 LTS. We have also noticed that the 
+results slightly changes under different operating environments. 
+
 
 ## Installation
 
