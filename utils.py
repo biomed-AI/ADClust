@@ -77,6 +77,8 @@ def judge_system():
     if platform.system() == "Windows":
         return False
 
+    sys="linux"
+    version="1.0"
     try:
         import lsb_release_ex as lsb
         info=lsb.get_lsb_information()
