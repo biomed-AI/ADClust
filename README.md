@@ -56,7 +56,7 @@ python ADClust.py --name Xin_normalized
 
 ## output
 
-The clustering cell labels will be stored in the dir `output`/dataname_pred.csv. 
+The clustering cell labels will be stored in the dir [output](https://github.com/biomed-AI/ADClust/tree/main/output) /dataname_pred.csv. 
 
 
 
