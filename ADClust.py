@@ -444,5 +444,5 @@ if __name__ == "__main__":
 
     if not os.path.exists("output"):
         os.mkdir("output")
-    pd.DataFrame({"cluster_labels": cluster_labels}).to_csv(
-        "output/" + args.name + ".csv", header=False,index=False)
+    pd.DataFrame({"cluster_labels": cluster_labels}, index=list(adata.obs_names)).to_csv(
+        "output/" + args.name + "_pred.csv")
