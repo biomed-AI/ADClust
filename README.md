@@ -14,8 +14,6 @@ Clustering analysis is widely utilized in single-cell RNA-sequencing (scRNA-seq)
 ## Requirements
 Please ensure that all the libraries below are successfully installed:
 
-- Ubuntu 16.04.7 LTS
-- GCC 5.4.0
 - **torch 1.7.1**
 - CUDA Version 10.2.89
 - scanpy 1.8.1
@@ -23,7 +21,7 @@ Please ensure that all the libraries below are successfully installed:
 - lsb_release_ex
 
 
-Note: All results have been obtained under Ubuntu 16.04.7 LTS. We have also noticed that the 
+Note: All results have been obtained under Ubuntu 16.04.7 LTS (GCC 5.4.0). We have also noticed that the 
 results slightly change under different operating environments. 
 
 
