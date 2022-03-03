@@ -89,10 +89,6 @@ for(i in 1:5) {
     data <- NormalizeData(data, normalization.method='RC')
     data <- FindVariableFeatures(data, selection.method = "vst", nfeatures = 2000)
 
-    # data <- ScaleData(data, verbose = FALSE)
-
-
-     # count=data@assays$RNA@data[data@assays$RNA@var.features,]
     count=data@assays$RNA@data
 
     meta.data=data@meta.data
