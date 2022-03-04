@@ -60,7 +60,7 @@ The clustering cell labels will be stored in the dir [output](https://github.com
 
 ## scRNA-seq Datasets
 
-All datasets can be downloaded at [Here](https://www.synapse.org/#!Synapse:syn26524750/files/)
+All normalized datasets can be downloaded at [Here](https://www.synapse.org/#!Synapse:syn26524750/files/)
 
 All datasets will be downloaded to: [data](https://github.com/biomed-AI/ADClust/tree/main/data) 
 
